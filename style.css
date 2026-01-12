@@ -1,0 +1,83 @@
+body {
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg,#ff9a9e,#fad0c4);
+  color:white;
+  text-align:center;
+}
+
+.center {
+  margin-top:20%;
+}
+
+.container {
+  margin-top:5%;
+}
+
+h1,h2 {
+  text-shadow: 0 0 10px #fff;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 25px;
+  background:#ff4d6d;
+  color:white;
+  text-decoration:none;
+  border-radius:20px;
+  box-shadow:0 0 15px #ff4d6d;
+}
+
+.btn:hover {
+  background:#ff1f4b;
+}
+
+.heart-frame {
+  width:220px;
+  height:200px;
+  margin:auto;
+  background:red;
+  position:relative;
+  transform: rotate(-45deg);
+  margin-bottom:40px;
+}
+
+.heart-frame::before,
+.heart-frame::after {
+  content:"";
+  width:220px;
+  height:200px;
+  background:red;
+  border-radius:50%;
+  position:absolute;
+}
+
+.heart-frame::before {
+  top:-100px;
+  left:0;
+}
+
+.heart-frame::after {
+  left:100px;
+  top:0;
+}
+
+.heart-frame img {
+  width:200px;
+  height:180px;
+  object-fit:cover;
+  position:absolute;
+  top:10px;
+  left:10px;
+  transform: rotate(45deg);
+  border-radius:10px;
+}
+
+.poem {
+  background:rgba(255,255,255,0.2);
+  display:inline-block;
+  padding:20px 30px;
+  border-radius:15px;
+  box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
